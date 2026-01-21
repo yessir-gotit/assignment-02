@@ -613,15 +613,25 @@ nav li a{
 .social-links {
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 
-.social-links img {
-    width: 24px;
-    height: 24px;
-    opacity: 0.7;
-    transition: 0.3s;
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px; 
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    text-decoration: none;
 }
 
+.social-links a img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
 
 
 /* Host section Ends */
@@ -719,7 +729,7 @@ footer {
         background: url(assets/hamburger-menu.png);
         background-repeat: no-repeat;
         background-position: center right;
-        
+
     }
     nav li{
         display: none;
