@@ -509,6 +509,7 @@ nav li a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    align-items: stretch;
     margin-bottom: 100px;
 }
 
@@ -522,7 +523,7 @@ nav li a{
 }
 
 .episode-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     
 }
 
@@ -543,6 +544,7 @@ nav li a{
 
 .episode-text {
     padding: 25px;
+
 }
 
 .episode-text h3 {
@@ -558,13 +560,23 @@ nav li a{
     margin-bottom: 20px;
 }
 
-.duration {
+.time {
     color: #00F5A0;
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 1rem;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     gap: 8px;
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.time p{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
 }
 
 /* Host section Starts */
@@ -932,7 +944,7 @@ footer {
         width: 50px;
     }
     .card{
-        background-color: #351165;
+        background-color: rgba(53, 17, 101,0.45);
         opacity: 0.9;
         padding: 24px;
         border-radius: 24px;
@@ -949,4 +961,153 @@ footer {
         align-items: center;
         gap: 30px;
     }
+
+    /* Why choose done */
+
+    .podcast{
+        padding: 40px 20px;
+        background-color: #1A0B2E;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        
+    }
+
+    .podcast-main h2{
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 24px;
+
+    }
+    
+    .grid-episode{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .episode-card{
+        border-radius: 15px;
+        background-color: #250D44;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .video{
+        width: 100%;
+        position: relative;
+        padding-top: 56.25%;
+        height: 0;
+        overflow: hidden;
+
+    }
+
+    .video iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .episode-text{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 16px;
+    }
+
+    .time {
+    color: #00F5A0;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 10px;
+    }
+
+    .time p{
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+
+    /* video done */
+
+    .host{
+        margin-top: 60px;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .host h2{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .host-card{
+        padding: 24px;
+        background-color: rgba(53, 17, 101,0.4);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        border-radius: 24px;
+    }
+
+    .host-card h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .host-card p{
+        margin: 15px auto;
+        font-size: 1 rem;
+        line-height: 1.6;
+        opacity: 0.7;
+    }
+    .social-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .social-links a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px; 
+        height: 44px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        text-decoration: none;
+    }
+
+    .social-links a img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+
+
+    /* Challenge Done */
+
+    
 }
