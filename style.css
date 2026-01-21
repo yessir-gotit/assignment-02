@@ -729,6 +729,7 @@ footer {
         background: url(assets/hamburger-menu.png);
         background-repeat: no-repeat;
         background-position: center right;
+        margin: 0 auto;
 
     }
     nav li{
