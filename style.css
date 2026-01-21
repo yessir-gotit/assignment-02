@@ -32,11 +32,12 @@ nav li a {
     font-weight: 500;
 }
 
-.nav-bar p {
+#logo {
     color: white;
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
 }
 
 #name {
@@ -164,7 +165,7 @@ nav li a{
     padding-bottom: 24px;
     
 }
-.nav-bar p{
+#logo{
     color: white;
     font-size: 2rem;
     font-weight: bold;
@@ -246,7 +247,7 @@ nav li a{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 .hero-circle img:nth-of-type(1){
@@ -738,19 +739,19 @@ footer {
         display: none;
     }
 
-    .nav-bar p{
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    cursor: pointer;
+    .nav-bar a{
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
     }
     .nav-btn{
         display: none;
     }
     #name{
-    background: linear-gradient(60deg,#F7E93F,#FB09B4 ,#9100F8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+        background: linear-gradient(60deg,#F7E93F,#FB09B4 ,#9100F8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
     .hero {
         padding: 40px 20px;
@@ -776,11 +777,14 @@ footer {
     }
 
     .hero-circle{
+        margin: 0 auto;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 200px;
+
+        
     }
 
     .hero-circle img:nth-of-type(1){
@@ -802,15 +806,16 @@ footer {
     }
 
     #new {
-    background-color: #00FF88;
-    color: #1A0B2E;
-    padding: 8px 16px;
-    font-weight: 600;
-    border-radius: 1000px;
-    position: absolute;
-    top: 0%; 
-    right: -80px;
-    box-shadow: 0 0 20px rgba(0, 255, 163, 0.4);
+        background-color: #00FF88;
+        color: #1A0B2E;
+        padding: 8px 16px;
+        font-weight: 600;
+        border-radius: 1000px;
+        position: absolute;
+        top: 0%; 
+        right: 0%;
+        transform: translateX(130%);
+        box-shadow: 0 0 20px rgba(0, 255, 163, 0.4);
 }
     .hero-text{
         color: white;
@@ -871,10 +876,10 @@ footer {
         color: white;
     }
     .divider {
-    width: 100%;
-    border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin: 20px auto;
+        width: 100%;
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 20px auto;
 }
     .about-text h1{
         font-size: 2rem;
