@@ -708,7 +708,7 @@ footer {
 @media screen and (max-width: 576px) {
     nav{
         background-color: #1A0B2E;
-        min-width: 440px;
+        
         width: 100%;
         padding: 15px 40px;
     }
@@ -719,7 +719,7 @@ footer {
         background: url(assets/hamburger-menu.png);
         background-repeat: no-repeat;
         background-position: center right;
-
+        
     }
     nav li{
         display: none;
